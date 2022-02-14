@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>URL Shorter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../images/favicon2.ico"
+      type="image/ico"
+      sizes="16x16"
+    />
+    <script type="text/javascript" src=""></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #00c3ff, #eeef1c);
+        background: linear-gradient(135deg, #fc00ff, #00dbde);
+        background-image: linear-gradient(135deg, #ff00ba 0%, #fae713 100%);
+        background-image: linear-gradient(
+          150deg,
+          #5a00ff 0%,
+          #ff1ff7 100%,
+          #ff1ff7 100%
+        );
+        min-height: 93vh;
+      }
+
+      .wrapper {
+        max-width: 500px;
+        margin: 50px auto;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: grid;
+        font-family: Avenir, sans-serif;
+        color: #111;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .cta {
+        position: relative;
+
+        margin: auto;
+        padding: 19px 22px;
+        transition: all 0.2s ease;
+      }
+      .cta:before {
+        content: "";
+        position: absolute;
+
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 28px;
+        background: rgba(255, 171, 157, 0.5);
+        width: 56px;
+        height: 56px;
+        transition: all 0.3s ease;
+      }
+      .cta span {
+        position: relative;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 900;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        vertical-align: middle;
+      }
+      .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #111;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+      }
+      .cta:hover:before {
+        width: 100%;
+        background: #ffab9d;
+      }
+      .cta:hover svg {
+        transform: translateX(0);
+      }
+      .cta:active {
+        transform: scale(0.96);
+      }
+
+      @media (max-width: 350px) {
+        .wrapper {
+          margin: 10px auto;
+        }
+      }
+    </style>
+  </head>
+  <body oncontextmenu="return false" class="snippet-body">
+    <div class="wrapper">
+      <div class="logout">
+        <a href="/auth/logout" class="cta">
+          <span>Logout</span>
+          <svg width="13px" height="10px" viewBox="0 0 13 10">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
